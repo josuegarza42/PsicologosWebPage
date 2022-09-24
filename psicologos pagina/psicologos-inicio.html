@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="https://kit.fontawesome.com/83745cb559.js" crossorigin="anonymous"></script> -->
+    <title>Maquetación Psicólogos</title>
+</head>
+
+<body>
+    <!-- <nav class="relative container mx-auto p-6 bg-whiteNav"> -->
+    <nav class="relative mx-auto p-6 mb-10 bg-whiteNav border-b-gray-300 border-2">
+        <!-- flex container -->
+        <div class="flex mx-6 items-center justify-between">
+            <!-- LOGO -->
+            <div class="pt-2 flex">
+                <!-- <i class="fa-solid fa-house text-3xl"></i> -->
+                <a href="psicologos-inicio.html" class="px-3 text-3xl text-bold"><i class="fa-solid fa-house text-3xl"></i> Inicio</a>
+            </div>
+            
+            <!-- menu items -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="platicasycursos.html" class="text-bold text-1xl text-brownSugar hover:text-darkGrayishBlue">Talleres y Cursos</a>
+                <a href="#" class="text-bold text-1xl text-brownSugar hover:text-darkGrayishBlue">Artículos Informativos</a>
+                <a href="#" class="text-bold text-1xl text-brownSugar hover:text-darkGrayishBlue">Ubicación</a>
+                <a href="#" class="text-bold text-1xl text-brownSugar hover:text-darkGrayishBlue">Sobre Nosotros</a>
+            </div>
+
+            <div class="flex">
+                <!-- button -->
+                <a 
+                href="" 
+                class="hidden md:block p-3 px-6 mx-2 pt-2 text-white bg-patricksBlue rounded-md 
+                baseline hover:font-bold">Registrarse</a>
+                
+                <!-- button -->
+                <a 
+                href="" 
+                class="hidden md:block p-3 px-6 mx-2 pt-2 text-patricksBlue bg-white border-[#243c5a] rounded-md 
+                baseline border-2 border-patricksBlue hover:font-bold">Iniciar Sesión</a>
+            </div>
+
+            <!-- hamburguer icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 
+                    space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 
+                    drop-shadow-md">
+                <a href="platicasycursos.html">Talleres y Cursos</a>
+                <a href="">Artículos Informativos</a>
+                <a href="">Ubicación</a>
+                <a href="">Sobre Nosotros</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <section class="pb-10 h-[38.72rem]">
+        <div class="container mx-auto px-10">
+            <div class="relative">
+                <!-- <div class="h-[66.3vh] w-auto bg-gray-200"> -->
+                <ul id="slider">
+                    <!-- first slide -->
+                    <li class="h-[50vh] relative">
+                        <img src="/img/carousel/carousel1.jpg" class="h-[38.72rem] w-[80rem] object-cover" alt="">
+                        <!-- <div class="absolute top-0 left-0 h-[38.72rem] w-[80rem]">
+                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                        </div> -->
+                    </li>
+                    <!-- second slide -->
+                    <li class="h-[50vh] relative hidden">
+                        <img src="/img/carousel/carousel2.jpg" class="h-[38.72rem] w-[80rem] object-cover" alt="">
+                        <!-- <div class="absolute top-0 left-0 h-[38.72rem] w-[80rem]">
+                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                        </div> -->
+                    </li>
+                    <!-- third slide -->
+                    <li class="h-[50vh] relative hidden">
+                        <img src="/img/carousel/carousel3.jpg" class="h-[38.72rem] w-[80rem] object-cover" alt="">
+                        <!-- <div class="absolute top-0 left-0 h-[38.72rem] w-[80rem]">
+                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                        </div> -->
+                    </li>
+                    <!-- fourth slide -->
+                    <li class="h-[50vh] relative hidden">
+                        <img src="/img/carousel/carousel4.jpg" class="h-[38.72rem] w-[80rem] object-cover" alt="">
+                        <!-- <div class="absolute top-0 left-0 h-[38.72rem] w-[80rem]">
+                            <h2 class="text-4xl font-bold text-white my-auto w-full text-center px-20">Some big heading</h2>
+                        </div> -->
+                    </li>
+                </ul>
+
+                <div class="absolute px-5 flex h-[38.72rem] w-[80rem] top-0 left-0">
+                    <div class="my-auto w-full flex justify-between">
+                        <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- imagen necesitas ayuda? -->
+    <section class="mb-52">
+        <div class="container flex justify-between py-10 my-28 mx-auto space-y-8">
+            <img src="img/ayuda.jpg" class="mx-auto w-full lg:scale-[1.323]" alt=""/>
+        </div>
+    </section>
+
+    <!-- cards con información -->
+    <section class="mb-14">
+        <div class="max-w-6xl px-5 mx-auto pb-24 text-left flex">
+            <img src="/img/cards/card1.jpg" class="lg:scale-[1.45]" alt="">
+            <h1 class="md:mt-[210] md:ml-[76] absolute font-extrabold text-4xl text-spaceCadet">
+                NUESTRO ULTIMO TALLER AGREGADO
+            </h1>
+            <p class="md:mt-[249] font-medium md:ml-[76] absolute text-4xl text-white">
+                USO DE PALABRAS APROBATORIAS
+            </p>
+            <a href="" class="absolute md:block p-3 px-6 md:mt-[321] md:ml-[76] pt-2 text-white bg-spaceCadet rounded-md 
+            baseline hover:font-bold hover:bg-white hover:text-spaceCadet">Leer más</a>
+        </div>
+
+        <div class="max-w-6xl px-5 mx-auto pb-24 mt-32 text-left flex">
+            <img src="/img/cards/card2.jpg" class="lg:scale-[1.45]" alt="">
+            <h1 class="mt-[210] ml-[76] absolute font-extrabold text-4xl text-spaceCadet">
+                NUESTRO ULTIMO ARTICULO AGREGADO
+            </h1>
+            <p class="mt-[249] font-medium ml-[76] absolute text-4xl text-white">
+                DEPRESION LABORAL AL BORDE DEL BURN OUT
+            </p>
+            <a href="" class="absolute md:block p-3 px-6 mt-[321] ml-[76] pt-2 text-white bg-spaceCadet rounded-md 
+            baseline hover:font-bold hover:bg-white hover:text-spaceCadet">Leer más</a>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="bg-xiketic p-6">
+        <!-- flex container -->
+        <div class="flex place-content-end flex-col-reverse justify-between px-6 py-5 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- LOGO -->
+            <div class="pt-2 flex">
+                <!-- <i class="fa-solid fa-house text-3xl"></i> -->
+                <a class="px-3 text-3xl text-bold text-white"><i class="fa-solid fa-house text-3xl"></i> Inicio</a>
+            </div>
+            <div class="space-x-6 md:flex pt-3">
+                <a href="platicasycursos.html" class="text-bold text-1xl text-white hover:text-darkGrayishBlue">Talleres y Cursos</a>
+                <a href="#" class="text-bold text-1xl text-white hover:text-darkGrayishBlue">Artículos Informativos</a>
+                <a href="#" class="text-bold text-1xl text-white hover:text-darkGrayishBlue">Ubicación</a>
+                <a href="#" class="text-bold text-1xl text-white hover:text-darkGrayishBlue">Sobre Nosotros</a>
+            </div>
+            <!-- logo and social icons container -->
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2022, All Rights Reserved
+                </div>
+                
+                <!-- social links container -->
+                <div class="flex justify-center space-x-8">
+                    <!-- link 1 -->
+                    <a href="">
+                        <img src="img/icon-facebook.svg" alt="" class="h-8">
+                    </a>
+                    <!-- link 5 -->
+                    <a href="">
+                        <img src="img/icon-instagram.svg" alt="" class="h-8">
+                    </a>
+                    <!-- link 3 -->
+                    <a href="">
+                        <img src="img/icon-twitter.svg" alt="" class="h-8">
+                    </a>
+                    <!-- link 2 -->
+                    <a href="">
+                        <i class="fa-brands fa-linkedin text-white text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-orange-500 pb-1"></div>
+        <div class="container flex place-content-center flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <div class="hidden mx-auto text-white md:block">
+                Copyright &copy; 2022, All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/83745cb559.js" crossorigin="anonymous"></script>
+</body>
+</html>
