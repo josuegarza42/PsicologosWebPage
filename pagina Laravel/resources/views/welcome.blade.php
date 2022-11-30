@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<x-app-layout>
+{{-- aca se extiende todo lo que se encuentre en el componente applayout, el cual esta en app, view, component, applayout, se escribe el componente en minusculas y listo --}}
+HOLA BB
+</x-app-layout>
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -130,3 +135,4 @@
         </div>
     </body>
 </html>
+ --}}

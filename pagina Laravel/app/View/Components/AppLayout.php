@@ -13,6 +13,9 @@ class AppLayout extends Component
      */
     public function render()
     {
+        
+/* ACA SE MANDA LLAMAR LA VISTA: RESOURCES/LAYOUTS/APP.BLADE.PHP */
         return view('layouts.app');
     }
 }
+
